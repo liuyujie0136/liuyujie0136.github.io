@@ -8,4 +8,4 @@ readme
 this is *amazing*
 
 ## for more things
-[index link](../liuyujie0136.github.io/master/index)
+[index link](../master/index)
