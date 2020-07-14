@@ -6,4 +6,4 @@ readme
 this is amazing
 
 ## for more things
-[index link](../test)
+[index link](../master/test.md)
