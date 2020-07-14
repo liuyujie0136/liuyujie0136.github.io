@@ -7,3 +7,6 @@ this is amazing
 
 ## for more things
 [index link](../master/test.md)
+
+## for python
+[DayDayUp.py](../master/DayDayUp.py)
