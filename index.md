@@ -6,7 +6,7 @@ readme
 this is amazing
 
 ## for more things
-[index link](../master/test.md)
+[index link](../test)
 
 ## for python
-[DayDayUp.py](../master/DayDayUp.py)
+[DayDayUp.py](../DayDayUp.py)
