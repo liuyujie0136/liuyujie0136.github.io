@@ -6,3 +6,6 @@ readme
 ### second line
 
 this is *amazing*
+
+## for more things
+[index link](../index)
