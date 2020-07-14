@@ -6,4 +6,4 @@ readme
 this is amazing
 
 ## for more things
-[index link](../master/test.md)
+[index link](../blob/master/test)
