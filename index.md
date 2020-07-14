@@ -10,3 +10,5 @@ this is amazing
 
 ## for python
 [DayDayUp.py](../DayDayUp.py)
+
+### [Contact me](../contact-me)
