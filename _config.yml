@@ -1,9 +1,10 @@
 theme: jekyll-theme-minimal
 title: My Website
-description: |
-  "### This is my website.
+description: This is my website.
+data: |
+  ### This is *amazing*.
   
   ---
   
-  # BUT THIS IS NOT COMPLETE"
+  # BUT THIS IS NOT COMPLETE
 logo: ../小哀.png
