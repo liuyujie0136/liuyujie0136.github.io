@@ -1,11 +1,3 @@
-# Website By liuyujie0136
-### fiest line
+# README of Website Created By liuyujie0136
 
-readme
-
-### second line
-
-this is *amazing*
-
-## for more things
-[index link](../master/index)
+### this is *amazing*
