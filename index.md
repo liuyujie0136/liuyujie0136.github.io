@@ -5,10 +5,14 @@ readme
 ## second line
 this is amazing
 
-## for more things
-[index link](../test)
+## For test files
+[test link](../test)
 
-## for python
+## [Bookmarks](../Bookmarks)
+
+## For python
 [DayDayUp.py](../DayDayUp.py)
+
+## For Bioinfoematics
 
 ### [Contact me](../contact-me)
