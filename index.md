@@ -8,7 +8,5 @@
 ## For Python
 [DayDayUp.py](../DayDayUp.py)
 
-## For Bioinfoematics
-[Bioinfoematics](../test)
-
-### [Contact me](../contact-me)
+## For Bioinformatics
+[Bioinformatics](../test)
