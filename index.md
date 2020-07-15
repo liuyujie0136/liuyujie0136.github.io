@@ -1,18 +1,14 @@
 # Website By liuyujie0136
-## fiest line
-readme
-
-## second line
-this is amazing
-
 ## For test files
 [test link](../test)
 
-## [Bookmarks](../Bookmarks)
+## For Bookmarks
+[Bookmarks](../Bookmarks)
 
-## For python
+## For Python
 [DayDayUp.py](../DayDayUp.py)
 
 ## For Bioinfoematics
+[Bioinfoematics](../test)
 
 ### [Contact me](../contact-me)
