@@ -1,5 +1,5 @@
 # Bookmarks
-*This page is a collection of my favourate websites selected from Microsoft Edge Bookmarks. Some comments were added to instruct the use of these websites.*
+*This page is a collection of my favourate websites selected from my Microsoft Edge Bookmarks. Some comments were added to instruct the use of these websites.*
 ### UNDER REVISION
 
 ## Journals
@@ -30,7 +30,7 @@
 
 [Sci-Hub](https://www.sci-hub.tw/)
 
-[ResearchGate | Find and share research](https://www.researchgate.net/)
+[ResearchGate](https://www.researchgate.net/)
 
 ## Bioinformatics
 [National Center for Biotechnology Information (NCBI)](https://www.ncbi.nlm.nih.gov/)
