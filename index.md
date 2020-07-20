@@ -13,7 +13,10 @@
 *Brief Introduction to be completed*
 
 #### DayDayUp
-[View Online](../pythonfiles/DayDayUp) | [Download](../blob/master/pythonfiles/DayDayUp.py)
+
+[View Online](../pythonfiles/DayDayUp) | [Download](../pythonfiles/DayDayUp.py)
+
+#### Other python files to be continue...
 
 ## For Bioinformatics
 *Brief Introduction to be completed*
