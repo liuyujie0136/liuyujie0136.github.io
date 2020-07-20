@@ -10,16 +10,17 @@
 ## Collection of My Writings
 *Brief Introduction to be completed*
 
-[Part 1](../WritingCollection1) | [Part 2](../WritingCollection2) | [Part 3](../WritingCollection3)
+---
+[Part 1](../writingfiles/Part1) | [Part 2](../writingfiles/Part2) | [Part 3](../writingfiles/Part3)
 
 ## For Python
 *Brief Introduction to be completed*
 
 ### DayDayUp
-
+---
 [View Online](../pythonfiles/DayDayUp) | [Download](../pythonfiles/DayDayUp.py)
 
 ## For Bioinformatics
 *Brief Introduction to be completed*
 
-[Bioinformatics](../Bioinfofiles/Bioinfo-test)
+[Bioinformatics](../bioinfofiles/Bioinfo-test)
