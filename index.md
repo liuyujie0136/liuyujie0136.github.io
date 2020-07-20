@@ -16,9 +16,10 @@
 *Brief Introduction to be completed*
 
 ### DayDayUp
-[View Online](../DayDayUp) | [Download](../DayDayUp.py)
+
+[View Online](../pythonfiles/DayDayUp) | [Download](../pythonfiles/DayDayUp.py)
 
 ## For Bioinformatics
 *Brief Introduction to be completed*
 
-[Bioinformatics](../Bioinfo)
+[Bioinformatics](../Bioinfofiles/Bioinfo-test)
