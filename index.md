@@ -11,13 +11,15 @@
 *Brief Introduction to be completed*
 
 ---
+
 [Part 1](../writingfiles/Part1) | [Part 2](../writingfiles/Part2) | [Part 3](../writingfiles/Part3)
 
 ## For Python
 *Brief Introduction to be completed*
 
-### DayDayUp
+#### DayDayUp
 ---
+
 [View Online](../pythonfiles/DayDayUp) | [Download](../pythonfiles/DayDayUp.py)
 
 ## For Bioinformatics
