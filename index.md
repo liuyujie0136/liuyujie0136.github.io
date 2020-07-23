@@ -1,5 +1,5 @@
 # Website By liuyujie0136
-## For Bookmarks
+## My Bookmarks: some useful websites
 *Brief Introduction to be completed*
 
 [Bookmarks](../Bookmarks)
@@ -9,7 +9,11 @@
 
 [Part 1](../writingfiles/Part1) | [Part 2](../writingfiles/Part2) | [Part 3](../writingfiles/Part3)
 
-## For Python
+## Daily-updated Diary
+[This year's Diary](../diaryfiles/this-year)
+[Previous Diary](../diaryfiles/previous)
+
+## Basic and Advanced Python Programming
 *Brief Introduction to be completed*
 
 #### DayDayUp
@@ -18,7 +22,7 @@
 
 #### Other python files to be continue...
 
-## For Bioinformatics
+## Bioinformatics
 *Brief Introduction to be completed*
 
 [Bioinformatics](../bioinfofiles/Bioinfo-test)
