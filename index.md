@@ -11,6 +11,7 @@
 
 ## Daily-updated Diary
 [This year's Diary](../diaryfiles/this-year)
+
 [Previous Diary](../diaryfiles/previous)
 
 ## Basic and Advanced Python Programming
