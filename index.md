@@ -10,7 +10,7 @@
 [Part 1](../writingfiles/Part1) | [Part 2](../writingfiles/Part2) | [Part 3](../writingfiles/Part3)
 
 ## Daily-updated Diary
-[This year's Diary](../diaryfiles/this-year)
+[This year's Diary](../diaryfiles/this-year)\\
 [Previous Diary](../diaryfiles/previous)
 
 ## Basic and Advanced Python Programming
