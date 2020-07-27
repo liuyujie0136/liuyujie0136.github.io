@@ -9,6 +9,11 @@
 
 [Part 1](/writingfiles/Part1.md) | [Part 2](../writingfiles/Part2) | [Part 3](../writingfiles/Part3)
 
+## Collection of My Reading Notes
+*In GitBook*
+
+[Reading Notes](https://liuyujie0136.gitbook.io/reading-notes/)
+
 ## Daily-updated Diary
 [This year's Diary](../diaryfiles/this-year)
 
