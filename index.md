@@ -7,17 +7,17 @@
 ## Collection of My Writings
 *Brief Introduction to be completed*
 
-[Part 1](/writingfiles/Part1.md) | [Part 2](../writingfiles/Part2) | [Part 3](../writingfiles/Part3)
+[Part 1](../writingfiles/Part1) | [Part 2](../writingfiles/Part2) | [Part 3](../writingfiles/Part3)
 
 ## Collection of My Reading Notes
 *In GitBook*
 
-[Reading Notes](https://liuyujie0136.gitbook.io/reading-notes/)
+[Reading Notes by liuyujie0136](https://liuyujie0136.gitbook.io/reading-notes/)
 
 ## Daily-updated Diary
-[This year's Diary](../diaryfiles/this-year)
+*Brief Introduction to be completed*
 
-[Previous Diary](../diaryfiles/previous)
+[Diary Collection](../diaryfiles/diary)
 
 ## Basic and Advanced Python Programming
 *Brief Introduction to be completed*
@@ -31,4 +31,5 @@
 ## Bioinformatics
 *Brief Introduction to be completed*
 
-[Bioinformatics](../bioinfofiles/Bioinfo-test)
+#### Test files
+[Test files](../bioinfofiles/Bioinfo-test)
