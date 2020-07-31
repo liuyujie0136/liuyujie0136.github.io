@@ -1,3 +1,4 @@
 # Contact me via
-### E-mail: liuyujie0136@outlook.com
-### Tel: N/A
+**GitHub: liuyujie0136**
+
+**Email: liuyujiekindle@163.com**
