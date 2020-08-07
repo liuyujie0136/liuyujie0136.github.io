@@ -31,5 +31,8 @@
 ## Bioinformatics
 *Brief Introduction to be completed*
 
-#### Test files
-[Test files](../bioinfofiles/Bioinfo-test)
+#### EVOLUTIONARY BIOLOGY _ Bt Refuge Recommendation _ Basic & Rough Algorithm
+
+[View Online](../bioinfofiles/BIOINFO_EVOL_BtRefuge) | [Download](../bioinfofiles/BIOINFO_EVOL_BtRefuge.py)
+
+#### Other bioinfo files to be continue...
