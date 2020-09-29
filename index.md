@@ -19,7 +19,7 @@
 ## Daily-updated Diary
 *Brief Introduction to be completed*
 
-[Diary Collection](../diaryfiles/diary)
+[Diary Collection](/diaryfiles/diary)
 
 ## Basic and Advanced Python Programming
 *Brief Introduction to be completed*
