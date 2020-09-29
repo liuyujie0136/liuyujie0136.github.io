@@ -9,10 +9,12 @@
 
 [Part 1](../writingfiles/Part1) | [Part 2](../writingfiles/Part2) | [Part 3](../writingfiles/Part3)
 
-## Collection of My Reading Notes
-*In GitBook*
+## Shared Notes
+*Brief Introduction to be completed*
 
-[Reading Notes by liuyujie0136](https://liuyujie0136.gitbook.io/reading-notes/)
+[Reading Notes](https://liuyujie0136.gitbook.io/reading-notes/)
+
+[DII Bio 2020](../notefiles/DII_Bio2020)
 
 ## Daily-updated Diary
 *Brief Introduction to be completed*
