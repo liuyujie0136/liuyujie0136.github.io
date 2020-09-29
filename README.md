@@ -1,3 +1,2 @@
-# README of Website Created By liuyujie0136
-
-### this is *amazing*
+# Website By liuyujie0136
+**A website for self learning, collecting and sharing.**
