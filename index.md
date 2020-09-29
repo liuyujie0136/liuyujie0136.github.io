@@ -1,13 +1,8 @@
-# Website By liuyujie0136
-## My Bookmarks: some useful websites
+# Homepage
+## Selected Bookmarks: some useful websites
 *Brief Introduction to be completed*
 
 [Bookmarks](../Bookmarks)
-
-## Collection of My Writings
-*Brief Introduction to be completed*
-
-[Part 1](../writingfiles/Part1) | [Part 2](../writingfiles/Part2) | [Part 3](../writingfiles/Part3)
 
 ## Shared Notes
 *Brief Introduction to be completed*
@@ -16,8 +11,14 @@
 
 [DII Bio 2020](../notefiles/DII_Bio2020)
 
-## Daily-updated Diary
+## Collection of My Writings
 *Brief Introduction to be completed*
+
+### Literature Writings
+
+[Part 1](../writingfiles/Part1) | [Part 2](../writingfiles/Part2) | [Part 3](../writingfiles/Part3)
+
+### Daily-updated Diary
 
 [Diary Collection](/diaryfiles/diary.md)
 
