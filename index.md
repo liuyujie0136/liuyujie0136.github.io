@@ -9,7 +9,7 @@
 
 [Reading Notes](https://liuyujie0136.gitbook.io/reading-notes/)
 
-[DII Bio 2020](notes/DII_Bio2020)
+[NJU DII 生物方向保研经验分享（2020年）](notes/DII_Bio2020)
 
 ## Collection of My Writings
 *Brief Introduction to be completed*
