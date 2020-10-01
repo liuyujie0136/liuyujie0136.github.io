@@ -1,4 +1,4 @@
-# BIOINFO_EVOL_BtRefuge.py
+# EVOL_BtRefuge.py
 ```python
 q1=eval(input('Resistance allelic frequency(q):'))
 t=eval(input('Relative toxicity of transgenic insecticidal cultivars(TIC):'))
