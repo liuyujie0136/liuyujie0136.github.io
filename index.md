@@ -20,7 +20,7 @@
 
 ### Daily-updated Diary
 
-[Diary Collection](/diaryfiles/diary.md)
+[Diary Collection](diaryfiles/diary.md)
 
 ## Basic and Advanced Python Programming
 *Brief Introduction to be completed*
