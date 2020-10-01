@@ -16,7 +16,7 @@
 
 ### Literature Writings
 
-[Part 1](../writingfiles/Part1) | [Part 2](../writingfiles/Part2) | [Part 3](../writingfiles/Part3)
+[南雪](writings/南雪) | [test1](../writings/Part2) | [test2](../writings/Part3) | [test3](../writings/Part2)
 
 ### Daily-updated Diary
 
