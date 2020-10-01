@@ -9,7 +9,7 @@
 
 [Reading Notes](https://liuyujie0136.gitbook.io/reading-notes/)
 
-[DII Bio 2020](notefiles/DII_Bio2020)
+[DII Bio 2020](notes/DII_Bio2020)
 
 ## Collection of My Writings
 *Brief Introduction to be completed*
@@ -20,14 +20,14 @@
 
 ### Daily-updated Diary
 
-[Diary Collection](diaryfiles/diary.md)
+[Diary Collection](diary/diary_collection.md)
 
 ## Basic and Advanced Python Programming
 *Brief Introduction to be completed*
 
 #### DayDayUp
 
-[View Online](pythonfiles/DayDayUp) | [Download](pythonfiles/DayDayUp.py)
+[View Online](python/DayDayUp) | [Download](python/DayDayUp.py)
 
 #### Other python files to be continue...
 
@@ -36,6 +36,6 @@
 
 #### EVOLUTIONARY BIOLOGY _ Bt Refuge Recommendation _ Basic & Rough Algorithm
 
-[View Online](bioinfofiles/BIOINFO_EVOL_BtRefuge) | [Download](bioinfofiles/BIOINFO_EVOL_BtRefuge.py)
+[View Online](bioinfo/EVOL_BtRefuge) | [Download](bioinfo/EVOL_BtRefuge.py)
 
 #### Other bioinfo files to be continue...
