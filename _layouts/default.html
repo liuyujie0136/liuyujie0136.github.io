@@ -19,8 +19,22 @@
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
-
+        
         <p>{{ site.description | default: site.github.project_tagline }}</p>
+        
+        <p style="font-weight: bold; text-align: left; ">
+          <br/>
+          Contents of Lab Guide:
+        </p>
+          <hr/>
+        <p style="font-weight: bold; text-align: left; ">
+          <a href="{{site.baseurl}}/#L1">Level I. Start</a> <br/>
+          <a href="{{site.baseurl}}/#L2">Level II. Research</a> <br/>
+          <a href="{{site.baseurl}}/#L3">Level III. Publish</a> <br/>
+        </p>
+          <hr/>
+          <br>
+          <br>
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
@@ -35,7 +49,11 @@
           <li><a href="{{ "https://pubmed.ncbi.nlm.nih.gov/" }}">Visit <strong>PubMed</strong></a></li>
           <li><a href="{{ "https://www.nature.com/" }}">Visit <strong>Nature</strong></a></li>
           <li><a href="{{ "https://science.sciencemag.org/" }}">Visit <strong>Science</strong></a></li>
+        </ul>
+        <ul class="downloads">
           <li><a href="{{ "https://www.google.com/" }}">Visit <strong>Google</strong></a></li>
+          <li><a href="{{ "https://www.nature.com/" }}">Visit <strong>Nature</strong></a></li>
+          <li><a href="{{ "https://science.sciencemag.org/" }}">Visit <strong>Science</strong></a></li>
         </ul>
         {% endif %}
       </header>
