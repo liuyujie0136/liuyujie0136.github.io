@@ -2,21 +2,21 @@
 ## Selected Bookmarks: some useful websites
 *Brief Introduction to be completed*
 
-[Bookmarks](../Bookmarks)
+[Bookmarks](Bookmarks)
 
 ## Shared Notes
 *Brief Introduction to be completed*
 
 [Reading Notes](https://liuyujie0136.gitbook.io/reading-notes/)
 
-[DII Bio 2020](../notefiles/DII_Bio2020)
+[DII Bio 2020](notefiles/DII_Bio2020)
 
 ## Collection of My Writings
 *Brief Introduction to be completed*
 
 ### Literature Writings
 
-[南雪](writings/南雪) | [test1](../writings/Part2) | [test2](../writings/Part3) | [test3](../writings/Part2)
+[南雪](writings/南雪) | [test1](writings/Part2) | [test2](writings/Part3) | [test3](writings/Part2)
 
 ### Daily-updated Diary
 
@@ -27,7 +27,7 @@
 
 #### DayDayUp
 
-[View Online](../pythonfiles/DayDayUp) | [Download](../pythonfiles/DayDayUp.py)
+[View Online](pythonfiles/DayDayUp) | [Download](pythonfiles/DayDayUp.py)
 
 #### Other python files to be continue...
 
@@ -36,6 +36,6 @@
 
 #### EVOLUTIONARY BIOLOGY _ Bt Refuge Recommendation _ Basic & Rough Algorithm
 
-[View Online](../bioinfofiles/BIOINFO_EVOL_BtRefuge) | [Download](../bioinfofiles/BIOINFO_EVOL_BtRefuge.py)
+[View Online](bioinfofiles/BIOINFO_EVOL_BtRefuge) | [Download](bioinfofiles/BIOINFO_EVOL_BtRefuge.py)
 
 #### Other bioinfo files to be continue...
