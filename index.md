@@ -9,6 +9,8 @@
 
 [Reading Notes](https://liuyujie0136.gitbook.io/reading-notes/)
 
+[阅读书籍](notes/books)
+
 [NJU DII 生物方向保研经验分享（2020年）](notes/DII_Bio2020)
 
 ## Collection of My Writings
