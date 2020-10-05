@@ -1,5 +1,6 @@
 # 阅读书籍分类汇总
-> By liuyujie0136
+> By liuyujie0136\
+> 由LaTeX格式转换
 
 ## 古代文学类
 
