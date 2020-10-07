@@ -2,7 +2,7 @@
 > 文件内容合并操作由[Bash脚本](C_NJU_bash)完成
 
 ## calendar.cpp 
-```C
+```c++
 #include <iostream>
 using namespace std;
 
