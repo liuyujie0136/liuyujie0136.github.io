@@ -1,4 +1,6 @@
-# ³ÌĞòÉè¼Æ»ù´¡¿Î³Ì°¸Àı @ NJU
+# ç¨‹åºè®¾è®¡åŸºç¡€è¯¾ç¨‹æ¡ˆä¾‹ @ NJU
+> æ–‡ä»¶å†…å®¹åˆå¹¶æ“ä½œç”±[Bashè„šæœ¬](C_NJU_bash)å®Œæˆ
+
 ## calendar.cpp 
 ```C++
 #include <iostream>
@@ -9,17 +11,17 @@ int main()
 	int iYear,iMonth,iWeek,iDay,n,j;
 	do
 	{
-		cout << "ÇëÊäÈëÈòÄêÄê·İ:"; 
+		cout << "è¯·è¾“å…¥é—°å¹´å¹´ä»½:"; 
 		cin >> iYear;
 	}while (iYear%4 != 0 || iYear%100 == 0);
 	do
 	{
-		cout << "ÇëÊäÈëÈòÄêÔÂ·İ:"; 
+		cout << "è¯·è¾“å…¥é—°å¹´æœˆä»½:"; 
 		cin >> iMonth;
 	}while (iMonth<1 || iMonth>12);
 	
-	cout << "\t\t" << iYear << " Äê " << iMonth << " ÔÂ " << endl;
-	cout << "ÈÕ\tÒ»\t¶ş\tÈı\tËÄ\tÎå\tÁù" << endl;
+	cout << "\t\t" << iYear << " å¹´ " << iMonth << " æœˆ " << endl;
+	cout << "æ—¥\tä¸€\täºŒ\tä¸‰\tå››\täº”\tå…­" << endl;
 	
 	switch (iMonth)
 	{
@@ -332,13 +334,13 @@ int main()
 		}
 	}
 	
-	for (i=0;i<k;i++)	//½»¼¯ 
+	for (i=0;i<k;i++)	//äº¤é›† 
 		for (j=0;j<m-k-1;j++)
 			if (a1[i]==a2[j])
 				cout << a1[i]<<" ";
 	cout <<endl;
 	
-	for (i=0;i<k;i++)	//²¢¼¯ 
+	for (i=0;i<k;i++)	//å¹¶é›† 
 		a3[i]=a1[i];
 	for (j=0;j<m-k-1;j++)
 		a3[k+j]=a2[j];
@@ -352,7 +354,7 @@ int main()
 	cout <<endl;
 	
 	
-	for (i=0;i<k;i++)	//²î¼¯ 1-2 
+	for (i=0;i<k;i++)	//å·®é›† 1-2 
 	{
 		flag=true;
 		for (j=0;j<m-k-1;j++)
@@ -414,7 +416,7 @@ int main()
 using namespace std;
 int main()
 {
-	cout<<":)"<<endl;//¸Ã×Ö·û»­µÄº¬ÒåÊÇÎ¢Ğ¦
+	cout<<":)"<<endl;//è¯¥å­—ç¬¦ç”»çš„å«ä¹‰æ˜¯å¾®ç¬‘
 	return 0;
 }
 ```
@@ -425,7 +427,7 @@ int main()
 using namespace std;
 int main()
 {
-	cout<<"ÇëÊäÈëÁ½¸öÕûÊı£º"<<endl;
+	cout<<"è¯·è¾“å…¥ä¸¤ä¸ªæ•´æ•°ï¼š"<<endl;
 	int a,b,c;
 	cin>>a>>b;
 	c=a*a+b*b;
@@ -442,7 +444,7 @@ using namespace std;
 int main()
 {
 	double a,b,c,d;
-	cout<<"ÇëÊäÈëÒ»Ôª¶ş´Î·½³Ìax^2+b^x+c=0ÏµÊıa,b,c"<<endl;
+	cout<<"è¯·è¾“å…¥ä¸€å…ƒäºŒæ¬¡æ–¹ç¨‹ax^2+b^x+c=0ç³»æ•°a,b,c"<<endl;
 	cin>>a>>b>>c;
 	d=b*b-4*a*c;
 	cout<<setiosflags(ios::fixed)<<setprecision(2)<<d<<endl;
@@ -477,13 +479,13 @@ using namespace std;
 int main()
 {
 	double x,y;
-	cout << "ÇëÊäÈë¹«ÀïÊıx" << endl;
+	cout << "è¯·è¾“å…¥å…¬é‡Œæ•°x" << endl;
 	cin >> x;
 	if (x <= 3)
 	  y = 9 + 1;
 	else
 	  y = 9 + 1 + 2.4 * (x-3);
-	cout << "Ó¦¸¶¿î" << fixed << setprecision(1) << y << "Ôª" << endl;
+	cout << "åº”ä»˜æ¬¾" << fixed << setprecision(1) << y << "å…ƒ" << endl;
 	return 0; 
 
 }
@@ -497,18 +499,18 @@ using namespace std;
 int main()
 {
 	int a,d,n,i,s = 0;
-	cout << "ÇëÊäÈëµÈ²îÊıÁĞµÄÏîÊın:";
+	cout << "è¯·è¾“å…¥ç­‰å·®æ•°åˆ—çš„é¡¹æ•°n:";
 	cin >> n;
-	cout << "ÇëÊäÈëµÈ²îÊıÁĞµÄÊ×Ïîa:";
+	cout << "è¯·è¾“å…¥ç­‰å·®æ•°åˆ—çš„é¦–é¡¹a:";
 	cin >> a;
-	cout << "ÇëÊäÈëµÈ²îÊıÁĞµÄ¹«²îd:";
+	cout << "è¯·è¾“å…¥ç­‰å·®æ•°åˆ—çš„å…¬å·®d:";
 	cin >> d;
 	for (i = 1;i <= n;i++) 
 	{
 		s = s + a;
 		a = a + d;
 	}
-	cout << "µÈ²îÊıÁĞµÄºÍÎª:" << s << endl;
+	cout << "ç­‰å·®æ•°åˆ—çš„å’Œä¸º:" << s << endl;
 	return 0;
 }
 ```
@@ -523,7 +525,7 @@ using namespace std;
 int main()
 {
 	double x0,x1,x2=0;
-	cout << "ÇëÊäÈëÒ»¸öÊı:";
+	cout << "è¯·è¾“å…¥ä¸€ä¸ªæ•°:";
 	cin >> x0;
 	x1 = x0;
 	x2 = (2*x1+x0/pow(x1,2))/3;
@@ -532,7 +534,7 @@ int main()
 		x1 = x2;
 		x2 = (2*x1+x0/pow(x1,2))/3;
 	}
-	cout << x0 << "µÄÁ¢·½¸ùÎª:" << fixed << setprecision(2) << x2;
+	cout << x0 << "çš„ç«‹æ–¹æ ¹ä¸º:" << fixed << setprecision(2) << x2;
 	return 0; 
 }
 ```
@@ -546,7 +548,7 @@ using namespace std;
 int main()
 {
 	int n,i,j;
-	cout << "ÇëÊäÈëÁâĞÎĞĞÊı:";
+	cout << "è¯·è¾“å…¥è±å½¢è¡Œæ•°:";
 	cin >> n;
 	for (i=1;i<=n;i++)
 	{ 
@@ -577,12 +579,12 @@ int compose(int n,int r)
 int main()
 {
 	int n,r;
-	cout << "±¾³ÌĞòÓÃÓÚ¼ÆËã´Ón¸öÊıÈ¡r¸öÊıµÄËùÓĞÑ¡Ôñ¸öÊı¡£" << endl;
-	cout <<"ÇëÊäÈën:" ;
+	cout << "æœ¬ç¨‹åºç”¨äºè®¡ç®—ä»nä¸ªæ•°å–rä¸ªæ•°çš„æ‰€æœ‰é€‰æ‹©ä¸ªæ•°ã€‚" << endl;
+	cout <<"è¯·è¾“å…¥n:" ;
 	cin >> n;
-	cout << "ÇëÊäÈër:";
+	cout << "è¯·è¾“å…¥r:";
 	cin >> r;
-	cout << "¼ÆËã½á¹ûÎª:" << compose(n,r) <<endl;
+	cout << "è®¡ç®—ç»“æœä¸º:" << compose(n,r) <<endl;
 	return 0;
 }
 ```
@@ -592,20 +594,20 @@ int main()
 #include <iostream>
 #include <cmath> 
 using namespace std;
-int CountDigit(int n); //ÉùÃ÷º¯Êı 
-int KthDigit(int n, int k);//ÉùÃ÷º¯Êı 
+int CountDigit(int n); //å£°æ˜å‡½æ•° 
+int KthDigit(int n, int k);//å£°æ˜å‡½æ•° 
 
 int main()
 {
 	int n,m;
-	cout << "ÇëÊäÈëÕıÕûÊın:";
+	cout << "è¯·è¾“å…¥æ­£æ•´æ•°n:";
 	cin >> n;
-	m = CountDigit(n);//µ÷ÓÃº¯Êı 
-	cout <<"ÕâÊÇÒ»¸ö"<<m<<"Î»Êı¡£ÆäÓÒÆğµÚ" << m/2 << "Î»ÉÏÊı×ÖÊÇ:" << KthDigit(n,m/2) <<endl;//µ÷ÓÃº¯Êı 
+	m = CountDigit(n);//è°ƒç”¨å‡½æ•° 
+	cout <<"è¿™æ˜¯ä¸€ä¸ª"<<m<<"ä½æ•°ã€‚å…¶å³èµ·ç¬¬" << m/2 << "ä½ä¸Šæ•°å­—æ˜¯:" << KthDigit(n,m/2) <<endl;//è°ƒç”¨å‡½æ•° 
 	return 0; 
 }
 
-int CountDigit(int n)//¶¨Òåº¯Êı 
+int CountDigit(int n)//å®šä¹‰å‡½æ•° 
 {
 	int i;
 	for (i=1;i<=n;i++)
@@ -616,7 +618,7 @@ int CountDigit(int n)//¶¨Òåº¯Êı
 	return i+1;
 }
 
-int KthDigit(int n, int k) //¶¨Òåº¯Êı 
+int KthDigit(int n, int k) //å®šä¹‰å‡½æ•° 
 {
 	n = n % (int)pow((double)10, k);
 	n = n / pow((double)10, k-1);
@@ -635,9 +637,9 @@ int myPow(int n,int k);
 int main()
 {
 	int n;
-	cout << "ÇëÊäÈëÒ»¸öÕıÕûÊı:";
+	cout << "è¯·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°:";
 	cin >> n;
-	cout << "¸ÃÕıÕûÊıµÄÄæĞòÊıÎª:" << IntRevs(n) << endl;
+	cout << "è¯¥æ­£æ•´æ•°çš„é€†åºæ•°ä¸º:" << IntRevs(n) << endl;
 	return 0;
 }
 
@@ -680,9 +682,9 @@ int myPow(int n,int k);
 int main()
 {
 	int n;
-	cout << "ÇëÊäÈëÒ»¸öÕıÕûÊı:";
+	cout << "è¯·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°:";
 	cin >> n;
-	cout << "¸ÃÕıÕûÊıµÄÄæĞòÊıÎª:" << IntRevsR(n) << endl;
+	cout << "è¯¥æ­£æ•´æ•°çš„é€†åºæ•°ä¸º:" << IntRevsR(n) << endl;
 	return 0;
 }
 
@@ -788,7 +790,7 @@ int main()
 		a = 1;
 		while (a % 2 !=0 || a <= 2)
 		{
-			cout << "ÇëÊäÈë´óÓÚ2Å¼Êı£º"; 
+			cout << "è¯·è¾“å…¥å¤§äº2å¶æ•°ï¼š"; 
 			cin >> a;		
 		}
 		for (i=2;i<=a/2;i++)
@@ -796,13 +798,13 @@ int main()
 			if (zhishu(i))
 				if (zhishu(a-i))
 					{
-						cout << "¶ÔÓÚÊäÈëµÄÅ¼Êı£¬¸çµÂ°ÍºÕ²ÂÏë³ÉÁ¢:" <<a<<"="<<i<<"+"<<a-i<<endl;
+						cout << "å¯¹äºè¾“å…¥çš„å¶æ•°ï¼Œå“¥å¾·å·´èµ«çŒœæƒ³æˆç«‹:" <<a<<"="<<i<<"+"<<a-i<<endl;
 						f=false;
 						break;
 					}
 		}
 		if (f)
-			cout <<"ÑéÖ¤Ê§°Ü£¡"<<endl; 
+			cout <<"éªŒè¯å¤±è´¥ï¼"<<endl; 
 	}
 	return 0;
 }
@@ -847,7 +849,7 @@ using namespace std;
 int main()
 {
 	int a,b,c,m;
-	cout << "ÇëÊäÈëÈı¸ö²»Í¬µÄÕıÕûÊı:" <<endl;
+	cout << "è¯·è¾“å…¥ä¸‰ä¸ªä¸åŒçš„æ­£æ•´æ•°:" <<endl;
 	cin >> a >> b >> c;
 	if ((b<a&&a<c)||(c<a&&a<b))
 		m = a;
@@ -855,7 +857,7 @@ int main()
 		m = b;
 	if ((a<c&&c<b)||(b<c&&c<a))
 		m = c;
-	cout << "Èı¸öÊıÖĞµÚ¶ş´óµÄÊıÊÇ:" << m;
+	cout << "ä¸‰ä¸ªæ•°ä¸­ç¬¬äºŒå¤§çš„æ•°æ˜¯:" << m;
 	return 0; 
 }
 ```
@@ -1072,7 +1074,7 @@ using namespace std;
 int main()
 {
 	int n,i,j,k,l;
-	cout << "ÇëÊäÈëÒ»¸öÕıÕûÊı(0±íÊ¾½áÊø³ÌĞò):";
+	cout << "è¯·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°(0è¡¨ç¤ºç»“æŸç¨‹åº):";
 	cin >> n;	
 	while (n != 0)
 	{
@@ -1086,7 +1088,7 @@ int main()
 							goto End;
 						}
 		End:;			
-		cout << "ÇëÊäÈëÒ»¸öÕıÕûÊı(0±íÊ¾½áÊø³ÌĞò):";
+		cout << "è¯·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°(0è¡¨ç¤ºç»“æŸç¨‹åº):";
 		cin >> n;					
 	}
 	return 0;	
@@ -1101,7 +1103,7 @@ using namespace std;
 int main()
 {
 	int n,i,a1,a2,t;
-	cout << "ÇëÊäÈëÒ»¸öÌ¨½×Êı(ÕıÕûÊı£¬0±íÊ¾½áÊø³ÌĞò):";
+	cout << "è¯·è¾“å…¥ä¸€ä¸ªå°é˜¶æ•°(æ­£æ•´æ•°ï¼Œ0è¡¨ç¤ºç»“æŸç¨‹åº):";
 	cin >> n;	
 	while (n !=0)
 	{
@@ -1112,7 +1114,7 @@ int main()
 			a1=a2;
 			a2=t;
 		}
-		cout << "Ìø·¨×ÜÊıÎª:" << a2 << endl << "ÇëÊäÈëÒ»¸öÌ¨½×Êı(ÕıÕûÊı£¬0±íÊ¾½áÊø³ÌĞò):";	
+		cout << "è·³æ³•æ€»æ•°ä¸º:" << a2 << endl << "è¯·è¾“å…¥ä¸€ä¸ªå°é˜¶æ•°(æ­£æ•´æ•°ï¼Œ0è¡¨ç¤ºç»“æŸç¨‹åº):";	
 		cin >> n;					
 	}
 	return 0;		
@@ -1177,9 +1179,9 @@ int count(int n)
 		return 1;
 	else
 		return (n-1)*(count(n-1)+count(n-2));
-		/* Ç°n-1·âÈ«×°´í £¬ÄÇÃ´½«µÚn·âÓëÖ®Ç°ÈÎºÎÒ»¸ö½»»»£¬n¸ö½«È«×°´í£»
-		Ç°n-1¸öÓĞÒ»¸ö×°¶Ô£¬ÄÇÃ´µÚn·âÖ»ÄÜºÍÕâÒ»·â½»»» £»
-		Ç°n-1¸öÓĞÒ»¸ö×°¶Ô£¬Ïàµ±ÓÚn-1(¿ÕÏĞÎ»ÖÃÊı)³ËÒÔµÚn-1¸ö×°¶Ô£¬Òà¼´Ç°n-2¸öÈ«²¿×°´í£»*/ 
+		/* å‰n-1å°å…¨è£…é”™ ï¼Œé‚£ä¹ˆå°†ç¬¬nå°ä¸ä¹‹å‰ä»»ä½•ä¸€ä¸ªäº¤æ¢ï¼Œnä¸ªå°†å…¨è£…é”™ï¼›
+		å‰n-1ä¸ªæœ‰ä¸€ä¸ªè£…å¯¹ï¼Œé‚£ä¹ˆç¬¬nå°åªèƒ½å’Œè¿™ä¸€å°äº¤æ¢ ï¼›
+		å‰n-1ä¸ªæœ‰ä¸€ä¸ªè£…å¯¹ï¼Œç›¸å½“äºn-1(ç©ºé—²ä½ç½®æ•°)ä¹˜ä»¥ç¬¬n-1ä¸ªè£…å¯¹ï¼Œäº¦å³å‰n-2ä¸ªå…¨éƒ¨è£…é”™ï¼›*/ 
 }
 ```
 
@@ -1301,7 +1303,7 @@ void myfree(node *head)
 }
 ```
 
-½×³ËµÄÁã(C).cpp 
+é˜¶ä¹˜çš„é›¶(C).cpp 
 ```C++
 #include<stdio.h>
 int n,i,j,ans;
@@ -1320,7 +1322,7 @@ int main()
 }
 ```
 
-½×³ËµÄÁã(C++).cpp 
+é˜¶ä¹˜çš„é›¶(C++).cpp 
 ```C++
 #include <iostream>
 using namespace std;
