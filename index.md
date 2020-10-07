@@ -11,6 +11,7 @@
 ## Collection of My Writings
 ### Literature Writings
 * [南雪](writings/南雪)
+* [test](writings/test)
 
 ### [Daily-updated Diary Collection](diary/diary_collection.md)
 
