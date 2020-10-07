@@ -1,5 +1,5 @@
 # Homepage
-## Selected Bookmarks: some useful websites
+## Selected Bookmarks
 * [Bookmarks_unclassified](bookmarks/main)
 
 ## Shared Notes
@@ -10,8 +10,8 @@
 
 ## Collection of My Writings
 ### Literature Writings
-
-[南雪](writings/南雪) | [test1](writings/Part2) | [test2](writings/Part3) | [test3](writings/Part2)
+* [南雪](writings/南雪)
+* [test1](writings/test1)
 
 ### [Daily-updated Diary Collection](diary/diary_collection.md)
 
@@ -21,5 +21,5 @@
 ## Bioinformatics Files and Tutorials
 * [EVOLUTIONARY BIOLOGY _ Bt Refuge Recommendation _ Basic & Rough Algorithm](bioinfo/EVOL_BtRefuge)
 * [Bioinformatics in Action @ LuLab, Tsinghua University](https://lulab2.gitbook.io/teaching/)
-* [Bioinfo Websites](bookmarks/bioinfo)
+* [Bioinfo Websites](bioinfo/bioinfo_websites)
 
