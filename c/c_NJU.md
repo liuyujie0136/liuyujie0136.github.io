@@ -1303,8 +1303,8 @@ void myfree(node *head)
 }
 ```
 
-阶乘的零(c).cpp 
-```c++
+## 阶乘的零(c)
+```c
 #include<stdio.h>
 int n,i,j,ans;
 
@@ -1322,7 +1322,7 @@ int main()
 }
 ```
 
-阶乘的零(c++).cpp 
+## 阶乘的零(c++)
 ```c++
 #include <iostream>
 using namespace std;
