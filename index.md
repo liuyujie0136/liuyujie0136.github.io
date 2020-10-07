@@ -22,7 +22,7 @@
 ## Basic C and C++ Programming
 * [程序设计基础课程案例 @ NJU](c/c_NJU)
 
-## Bioinformatics Files and Tutorials:
+## Bioinformatics Files and Tutorials
 > Linux, R and Programming
 
 * [EVOLUTIONARY BIOLOGY _ Bt Refuge Recommendation _ Basic & Rough Algorithm](bioinfo/EVOL_BtRefuge)
