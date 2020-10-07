@@ -3,7 +3,6 @@
 > under revision
 
 * [Bookmarks_unclassified](bookmarks/main)
-* [Bookmarks_test](bookmarks/test)
 
 ## Shared Notes
 * [Reading Notes](https://liuyujie0136.gitbook.io/reading-notes/)
@@ -14,7 +13,6 @@
 ## Collection of My Writings
 ### Literature Writings
 * [南雪](writings/南雪)
-* [test](writings/test)
 
 ### [Daily-updated Diary Collection](diary/diary_collection.md)
 
