@@ -11,7 +11,6 @@
 ## Collection of My Writings
 ### Literature Writings
 * [南雪](writings/南雪)
-* [test1](writings/test1)
 
 ### [Daily-updated Diary Collection](diary/diary_collection.md)
 
@@ -19,7 +18,7 @@
 * [Python语言程序设计课程案例 @ 北理工MOOC](python/python_mooc_BIT)
 
 ## Basic C and C++ Programming
-* [程序设计基础课程案例 @ NJU](c/C_NJU)
+* [程序设计基础课程案例 @ NJU](c/c_NJU)
 
 ## Bioinformatics Files and Tutorials:
 > Linux, R and Programming
