@@ -1,4 +1,4 @@
-# NJU程序设计基础案例内容合并Bash脚本
+# NJU程序设计案例内容合并Bash脚本
 ```bash
 #!/bin/bash
 
