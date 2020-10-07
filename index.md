@@ -18,7 +18,10 @@
 ## Basic and Advanced Python Programming
 * [Python语言程序设计课程案例 @ 北理工MOOC](python/python_mooc_BIT)
 
-## Bioinformatics Files and Tutorials
+## Basic C and C++ Programming
+* [程序设计基础课程案例 @ NJU](C/C_NJU)
+
+## Bioinformatics Files and Tutorials: Linux, R and Programming
 * [EVOLUTIONARY BIOLOGY _ Bt Refuge Recommendation _ Basic & Rough Algorithm](bioinfo/EVOL_BtRefuge)
 * [Bioinformatics in Action @ LuLab, Tsinghua University](https://lulab2.gitbook.io/teaching/)
 * [Bioinfo Websites](bioinfo/bioinfo_websites)
