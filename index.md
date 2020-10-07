@@ -21,7 +21,7 @@
 * [Python语言程序设计课程案例 @ 北理工MOOC](python/python_mooc_BIT)
 
 ## Basic C and C++ Programming
-* [程序设计基础课程案例 @ NJU](c/c_NJU)
+* [程序设计基础课程案例 @ NJU](c/c_NJU.md)
 
 ## Bioinformatics Files and Tutorials:
 > Linux, R and Programming
