@@ -137,6 +137,7 @@ id <username>	#查看指定用户信息
 ## Linux中for循环的几个常用写法
 
 1. 数字性循环
+
 ```bash
 #!/bin/bash
 
@@ -159,8 +160,8 @@ awk 'BEGIN{for(i=1; i<=10; i++) print i}'
 
 exit 0
 ```
-
 2. 字符性循环
+
 ```bash
 #!/bin/bash
 
@@ -187,8 +188,8 @@ done
 
 exit 0
 ```
-
 3. 路径查找
+
 ```bash
 #!/bin/bash
 
@@ -270,7 +271,6 @@ sed -e 's/^M/\n/g' text.txt	#注意：^M需使用[ctrl-v] [ctrl-m]生成，并�
 ```bash
 awk 'BEGIN{ORS=" "} {print}' text.txt
 #ORS：输出行分隔符，默认\n，此处改为空格，故可使两行合并
-
 awk 'BEGIN{RS=EOF} {gsub(/\n/," "); print}' text.txt
 #RS：输入行分隔符，默认\n，此处改为EOF文件结尾，故可一次读入整个文件，方便替换操作
 ```
