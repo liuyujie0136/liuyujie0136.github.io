@@ -123,6 +123,7 @@ id <username>	#查看指定用户信息
 
 * [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
 * Ubuntu的软件源配置文件是`/etc/apt/sources.list`。将系统自带的该文件做个备份，再将该文件替换为下面内容，即可使用TUNA的软件源镜像。
+
 ```
 #ubuntu版本: 18.04 LTS
 #默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
@@ -160,7 +161,7 @@ ls -F | grep '/$'	#最易用，若将其结果保存在变量里，可用循环�
 ls -l | grep '^d'	#显示信息最完整
 ```
 附：ls与cd连用示例
-```
+```bash
 #!/bin/bash
 
 dir=`ls -F | grep "/$"`
