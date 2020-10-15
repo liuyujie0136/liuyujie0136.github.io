@@ -26,11 +26,7 @@
 > Linux, R and Programming
 
 * [Bioinformatics in Action @ LuLab, Tsinghua University](https://lulab2.gitbook.io/teaching/)
-* [Docker从入门到实践](https://yeasy.gitbook.io/docker_practice/)
-* [鳥哥的Linux私房菜](http://linux.vbird.org/linux_basic/)
-* [Linux常用命令](https://mp.weixin.qq.com/s/cri9CEbVJizZIO9WwiCJ0g)
-* [Linux特殊符号](https://mp.weixin.qq.com/s/IO8Ckahig14RIvyDPX5lhw)
-* [Linux使用技巧](bioinfo/linux_tips)
+* [Linux使用技巧与注意事项](bioinfo/linux_tips)
 * [Bioinfo Websites](bioinfo/bioinfo_websites)
 * [EVOLUTIONARY BIOLOGY _ Bt Refuge Recommendation _ Basic & Rough Algorithm](bioinfo/EVOL_BtRefuge)
 
