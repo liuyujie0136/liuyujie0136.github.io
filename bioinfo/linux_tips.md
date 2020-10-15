@@ -16,7 +16,7 @@ Win10开始使用Hyper-V运行docker，家庭版无此功能，所以只能pro�
 
 * 关闭docker desktop
 * 关闭所有发行版
-```
+```dos
 wsl --shutdown
 ```
 * 导出docker-desktop-data
@@ -58,7 +58,7 @@ mkdir ~/Documents/bioinfo_tsinghua_share
 ```
 * 创建容器**（win10下共享文件夹需用绝对路径）**
 ```
-docker run --name=bioinfo_tsinghua -dt -h bioinfo_docker --restart unless-stopped -v C:/Users/[username]/Documents/pbioinfo_tsinghua_share:/home/test/share bioinfo_tsinghua
+docker run --name=bioinfo_tsinghua -dt -h bioinfo_docker --restart unless-stopped -v C:/Users/[username]/Documents/bioinfo_tsinghua_share:/home/test/share bioinfo_tsinghua
 ```
 * 将docker中的`/home/test/share`由`root`所有改为`test`所有
 ```
@@ -124,7 +124,7 @@ id <username>	#查看指定用户信息
 * [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
 * Ubuntu的软件源配置文件是`/etc/apt/sources.list`。将系统自带的该文件做个备份，再将该文件替换为下面内容，即可使用TUNA的软件源镜像。
 
-```
+```vim
 # ubuntu版本: 18.04 LTS
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
