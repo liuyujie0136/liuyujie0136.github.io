@@ -10,7 +10,7 @@
 
 Win10开始使用Hyper-V运行docker，家庭版无此功能，所以只能pro版本才能用docker desktop。后来升级到2004系统后，家庭版可升级WSL(Windows Subsystem for Linux)至WSL2，便可基于WSL2运行docker desktop，但相较于Hyper-V的区别在于，其数据由WSL2代为管理，无法在docker里设置镜像存储路径。
 
-安装docker后，docker会自动创建2个发行版：docker-desktop和docker-desktop-data，其默认安装在C盘，在%LOCALAPPDATA%/Docker/wsl目录里，而docker的运行数据、镜像文件都存在%LOCALAPPDATA%/Docker/wsl/data/ext4.vhdx中，比较占用C盘空间，故考虑将其迁移至D盘。
+安装docker后，docker会自动创建2个发行版：`docker-desktop`和`docker-desktop-data`，其默认安装在C盘，在`%LOCALAPPDATA%/Docker/wsl`目录里，而docker的运行数据、镜像文件都存在`%LOCALAPPDATA%/Docker/wsl/data/ext4.vhdx`中，比较占用C盘空间，故考虑将其迁移至D盘。
 
 对于WSL发行版的迁移，网上教程基本均需使用LxRunOffline，但其虽然可以迁移例如Ubuntu的发行版，但迁移不了docker自动创建的2个发行版。故考虑如下两种方式：
 
