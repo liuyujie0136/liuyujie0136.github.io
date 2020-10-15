@@ -2,13 +2,13 @@
 > Collected by liuyujie0136
 
 ## Docker
-> Docker is a tools to run Linux containers based on selected images.
+> Docker is a tool to run Linux containers based on selected images.
 
 ### [Docker从入门到实践](https://yeasy.gitbook.io/docker_practice/)
 
 ### Win10家庭版用WSL2运行Docker Desktop，将数据从C盘迁移到其他目录
 
-Win10开始使用Hyper-V运行docker，家庭版无此功能，所以只能pro版本才能用docker desktop。后来升级到2004系统后，家庭版升级WSL(Windows Subsystem for Linux)至WSL2后，便可基于WSL2运行docker desktop，但相较于Hyper-V的区别在于，其数据由WSL2代为管理，无法在docker里设置镜像存储路径。
+Win10开始使用Hyper-V运行docker，家庭版无此功能，所以只能pro版本才能用docker desktop。后来升级到2004系统后，家庭版可升级WSL(Windows Subsystem for Linux)至WSL2，便可基于WSL2运行docker desktop，但相较于Hyper-V的区别在于，其数据由WSL2代为管理，无法在docker里设置镜像存储路径。
 
 安装docker后，docker会自动创建2个发行版：docker-desktop和docker-desktop-data，其默认安装在C盘，在%LOCALAPPDATA%/Docker/wsl目录里，而docker的运行数据、镜像文件都存在%LOCALAPPDATA%/Docker/wsl/data/ext4.vhdx中，比较占用C盘空间，故考虑将其迁移至D盘。
 
@@ -382,7 +382,7 @@ set tabstop=4		"设置tab键为4个空格
 set shiftwidth=4	"设置当行之间交错时使用4个空格
 set ai!			"设置自动缩进
 set showmatch		"设置匹配模式，类似当输入一个左括号时会匹配相应的右括号
-set guioptions-=T	"去除vim的GUI版本中得toolbar
+set guioptions-=T	"去除vim的GUI版本中的toolbar
 set vb t_vb=		"当vim进行编辑时，如果命令错误，会发出警报，该设置去掉警报
 set ruler		"在编辑过程中，在右下角显示光标位置的状态行
 set nohls		"默认情况下，寻找匹配是高亮度显示，该设置关闭高亮显示
@@ -403,7 +403,7 @@ sudo apt -y install crontabs
 yum -y install rsync
 yum -y install crontabs
 ```
-* Prepare the backup dir
+* Prepare backup directory
 ```bash
 mkdir /mac/backup
 ```
