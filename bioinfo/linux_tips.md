@@ -137,72 +137,66 @@ id <username>	#查看指定用户信息
 ## Linux中for循环的几个常用写法
 
 1. 数字性循环
-
 ```bash
 #!/bin/bash
-
+# 1
 for((i=1;i<=10;i++));
 do
 	echo $(expr $i \* 3 + 1);
 done
-
+# 2
 for i in $(seq 1 10)
 do
 	echo $(expr $i \* 3 + 1);
 done
-
+# 3
 for i in {1..10}
 do
 	echo $(expr $i \* 3 + 1);
 done
-
+# 4
 awk 'BEGIN{for(i=1; i<=10; i++) print i}'
-
 exit 0
 ```
 2. 字符性循环
-
 ```bash
 #!/bin/bash
-
+# 1
 for i in `ls`;
 do 
 	echo $i is file name\! ;
 done
-
+# 2
 for i in $* ;
 do
 	echo $i is input chart\! ;
 done
-
+# 3
 for i in f1 f2 f3 ;
 do
 	echo $i is appoint ;
 done
-
+# 4
 list="rootfs usr data data2"
 for i in $list;
 do
 	echo $i is appoint ;
 done
-
 exit 0
 ```
 3. 路径查找
-
 ```bash
 #!/bin/bash
-
+# 1
 for file in /proc/*;
 do
 	echo $file is file path \! ;
 done
-
+# 2
 for file in $(ls *.sh)
 do
 	echo $file is file path \! ;
 done
-
 exit 0
 ```
 
@@ -215,7 +209,6 @@ ls -l | grep '^d'	#显示信息最完整
 附：ls与cd连用示例
 ```bash
 #!/bin/bash
-
 dir=`ls -F | grep "/$"`
 for i in $dir
 do
@@ -270,9 +263,9 @@ sed -e 's/^M/\n/g' text.txt	#注意：^M需使用[ctrl-v] [ctrl-m]生成，并�
 * 使用`awk`命令
 ```bash
 awk 'BEGIN{ORS=" "} {print}' text.txt
-#ORS：输出行分隔符，默认\n，此处改为空格，故可使两行合并
+# ORS：输出行分隔符，默认\n，此处改为空格，故可使两行合并
 awk 'BEGIN{RS=EOF} {gsub(/\n/," "); print}' text.txt
-#RS：输入行分隔符，默认\n，此处改为EOF文件结尾，故可一次读入整个文件，方便替换操作
+# RS：输入行分隔符，默认\n，此处改为EOF文件结尾，故可一次读入整个文件，方便替换操作
 ```
 
 * 使用`sed`命令：`sed`默认按行处理，`N`可以让其读入下一行，再对\n进行替换，这样就可以将两行并做一行。但为了将所有行并作一行，需要采用其跳转功能。`:flag`在代码开始处设置一个标记`flag`，在代码执行到结尾处时利用跳转命令`t flag`重新跳转到标号`flag`处，重新执行代码，这样就可以递归将所有行合并成一行。
@@ -288,9 +281,6 @@ cat text.txt | xargs
 * 附：文件合并、行筛选、多行合并脚本示例
 ```bash
 #!/bin/bash
-
-if [ all.out ]; then rm all.out; fi
-
 dir=`ls -F | grep "/$"`
 for i in $dir
 do
@@ -313,7 +303,6 @@ exit 0
 
 * [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
 * Ubuntu的软件源配置文件是`/etc/apt/sources.list`。将系统自带的该文件做个备份，再将该文件替换为下面内容，即可使用TUNA的软件源镜像。
-
 ```vim
 # ubuntu版本: 18.04 LTS
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
@@ -325,8 +314,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricte
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-
-# 预发布软件源，不建议启用
+# 以下为预发布软件源，不建议启用
 # deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
 ```
