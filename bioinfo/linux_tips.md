@@ -76,38 +76,38 @@ docker exec -it -u root bioinfo_tsinghua bash
 ## Linux查看系统基本信息
 
 1. 查看版本当前操作系统内核信息
-```
+```bash
 uname -a
 ```
 2. 查看当前操作系统版本信息
-```
+```bash
 cat /proc/version
 ```
 3. 查看版本当前操作系统发行版信息
-```
+```bash
 cat /etc/issue
 ```
 4. 查看cpu相关信息，包括型号、主频、内核信息等
-```
+```bash
 cat /proc/cpuinfo
 ```
 5. 查看服务器名称
-```
-hostname 
+```bash
+hostname
 ```
 6. 查看网络信息
-```
+```bash
 cat /etc/sysconfig/network-scripts/ifcfg-eth0
 cat /etc/sysconfig/network-scripts/ifcfg-l0
 ```
 7. 查看磁盘信息
-```
+```bash
 lsblk	#查看磁盘信息 - 列出所有可用块设备的信息，而且还能显示他们之间的依赖关系，但是它不会列出RAM盘的信息
 fdisk -l	#观察硬盘实体使用情况，也可对硬盘分区
 df -k	#用于显示磁盘分区上的可使用的磁盘空间
 ```
 8. 查看进程与用户信息
-```
+```bash
 ps -ef		#查看所有进程
 top		#实时显示进程状态
 w		#查看活动用户
@@ -125,29 +125,29 @@ id <username>	#查看指定用户信息
 * Ubuntu的软件源配置文件是`/etc/apt/sources.list`。将系统自带的该文件做个备份，再将该文件替换为下面内容，即可使用TUNA的软件源镜像。
 
 ```
-#ubuntu版本: 18.04 LTS
-#默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+# ubuntu版本: 18.04 LTS
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
-#deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-#deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-#deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-#deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
 
-#预发布软件源，不建议启用
-#deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-#deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
 ```
 
 ## Ubuntu下使用`apt install XX`(`sudo apt install XX`)报错`Unable to locate package`
 * 解决方法一：正常情况下只需要更新软件列表
-```
+```bash
 sudo apt update
 ```
 * 解决方法二：方法一无效时
-```
+```bash
 sudo apt upgrade
 ```
 * 注：一般情况下更改了软件源之后需要重新`update`
@@ -156,7 +156,7 @@ sudo apt upgrade
 
 ## Linux下ls命令只显示目录的方法
 
-```
+```bash
 ls -F | grep '/$'	#最易用，若将其结果保存在变量里，可用循环遍历并用cd访问
 ls -l | grep '^d'	#显示信息最完整
 ```
@@ -183,7 +183,7 @@ exit 0
 在Linux下使用`vi`或`cat -A`查看一些在Windows下创建的文本文件，有时会发现在行尾有一些`^M`，既影响文件的查看，也影响利用`awk`等命令对文件进行操作。有如下解决方法：
 
 * 使用dos2unix命令（**建议所有在win下创建的文件均先用此命令转换一下格式**）
-```
+```bash
 # sudo apt -y install dos2unix
 dos2unix myfile.txt
 ```
@@ -195,7 +195,7 @@ dos2unix myfile.txt
 :%s/^M/\r/g		#将^M替换成回车
 ```
 * 使用sed命令
-```
+```bash
 sed -e 's/^M/\n/g' myfile.txt	#注意：^M需使用[ctrl-v] [ctrl-m]生成，并非直接输入
 ```
 * 注：在vim的.vimrc文件中把fileformat=unix去掉便不会显示（默认不显示^M）
