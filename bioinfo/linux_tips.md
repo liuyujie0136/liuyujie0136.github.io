@@ -137,6 +137,7 @@ id <username>	#查看指定用户信息
 ## Linux中for循环的几个常用写法
 
 1. 数字性循环
+
 ```bash
 #!/bin/bash
 
