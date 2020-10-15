@@ -83,60 +83,370 @@ docker exec -it -u root bioinfo_tsinghua bash
 
 ## Linux查看系统基本信息
 
-1. 查看版本当前操作系统内核信息
+* 查看版本当前操作系统内核信息
 ```bash
 uname -a
 ```
-2. 查看当前操作系统版本信息
+* 查看当前操作系统版本信息
 ```bash
 cat /proc/version
 ```
-3. 查看版本当前操作系统发行版信息
+* 查看版本当前操作系统发行版信息
 ```bash
 cat /etc/issue
 ```
-4. 查看cpu相关信息，包括型号、主频、内核信息等
+* 查看cpu相关信息，包括型号、主频、内核信息等
 ```bash
 cat /proc/cpuinfo
 ```
-5. 查看服务器名称
+* 查看服务器名称
 ```bash
 hostname
 ```
-6. 查看网络信息
+* 查看网络信息
 ```bash
 cat /etc/sysconfig/network-scripts/ifcfg-eth0
 cat /etc/sysconfig/network-scripts/ifcfg-l0
 ```
-7. 查看磁盘信息
+* 查看磁盘信息
 ```bash
 lsblk		#查看磁盘信息 - 列出所有可用块设备的信息，而且还能显示他们之间的依赖关系，但是它不会列出RAM盘的信息
-fdisk -l		#观察硬盘实体使用情况，也可对硬盘分区
+fdisk -l	#观察硬盘实体使用情况，也可对硬盘分区
 df -k		#用于显示磁盘分区上的可使用的磁盘空间
 ```
-8. 查看进程与用户信息
+* 查看进程与用户信息
 ```bash
 ps -ef		#查看所有进程
 top		#实时显示进程状态
 w		#查看活动用户
 id <username>	#查看指定用户信息
 ```
-9. [更多内容](https://blog.csdn.net/qq_31278903/article/details/83146031)
+* [更多内容](https://blog.csdn.net/qq_31278903/article/details/83146031)
 
 ## Bash和Sh的区别
 > Bash is the most commonly used linux shell.
 
+* sh(或Shell命令语言)是由POSIX标准描述的一种编程语言。它有很多实现(ksh88, dash，…)。bash也可以被认为是sh的实现。因为sh是规范，不是实现，`/bin/sh`是在大部分POSIX系统上实际实现的符号连接（or 硬链接）。
+* bash是兼容sh的一种实现（虽然在几年之前被视为POSIX标准），但随着时间流逝，它需要更多的扩展。这里面的一些扩展会改变有效的POSIX shell脚本的行为，所以bash本身不是有效的POSIX shell，而是POSIX shell语言的方言。但bash可以执行`--posix`切换，使得它更加的兼容POSIX，同时也尝试通过调用sh来模仿POSIX。
+* 长期以来，在大部分GNU/Linux系统上，`/bin/sh`都是指向`/bin/bash`。结果，几乎可以忽略两者之间的区别了。但是这种情况最近开始改变。
+* 在`/bin/sh`不指向`/bin/bash`（在某些情况下甚至都不存在`/bin/bash`）的系统中，一些常见的例子是：
+  * 现代的debian和ubuntu系统上，`sh`默认是`dash`的符号链接
+  * Busybox，它通常在Linux系统引导时作为initramfs的一部分运行。它使用了ash shell实现。
+  * BSDs，以及通常所有非linux系统。OpenBSD 使用pdksh，Korn shell的后代。FreeBSD的sh是原始UNIX Bourne shell的后代。Solaris有它自己的sh，但长期以来都不是与POSIX兼容的，是一种Heirloom项目提供的一个开源实现。
+* 如何找到/bin/sh在我们系统上的指向
+  * `/bin/sh`的复杂之处是：它可以是符号链接也可以是硬链接。
+  * 如果是符号链接，可以通过如下方式：
+```bash
+test@bioinfo_docker:~$ file -h /bin/sh
+/bin/sh: symbolic link to dash
+```
+  * 如果是硬链接，可以尝试：
+```bash
+test@bioinfo_docker:~$ find -L /bin -samefile /bin/sh
+/bin/sh.distrib
+/bin/dash
+/bin/sh
+```
+  * 注：实际上`-L`标志同时包括符号链接和硬链接，但是这种方法的缺点是它不是可移植的，POSIX不需要`find`来支持`-samefile`选项，尽管GNU `find`和FreeBSD `find`都支持它。
+* Shebang：在计算领域中，Shebang（也称为Hashbang）是一个由井号和叹号构成的字符序列#!，其出现在文本文件的第一行的前两个字符。最终，通过在脚本的第一行编写Shebang来决定使用sh还是bash。
+```bash
+# 1. 使用sh
+#!/bin/sh
+# 2. 使用bash（如果不可用会失败并带上错误信息）
+#!/bin/bash
+# 3. 使用dash
+#!/bin/dash
+```
+
 ## 利用.bashrc个性化配制bash环境
 
+**示例一**
 
+```vim
+# .bashrc
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific environment and startup programs
+if [ -f $HOME/shortcuts ]; then
+        source $HOME/shortcuts
+fi
+PATH=$HOME/bin:$PATH
+export PATH
+
+# User specific aliases and functions
+alias qstat="qstat -u '*'"
+#alias screen="/usr/bin/screen -D -R"
+#alias rm="$HOME/bin/del.sh"
+#alias undel="$HOME/bin/del.sh -u"
+#alias ls="ls --color"
+alias ld="ls -d"
+alias c="clear"
+alias l="ls -alh"
+alias lf="ls -F|grep /"
+alias lt="ls -tlr"
+alias mv="mv -i"
+alias cp="cp -pi"
+alias diff="diff -b"
+
+#PERL5LIB=$MYHOME/perllib:$MYHOME/perllib/lib64/perl5/site_perl/5.8.5:$MYHOME/perlib/lib/perl5/site_perl/5.8.5
+#export PERL5LIB
+#export R_LIBS_USER=~/R:/data/apps/R_library
+```
+
+**示例二**
+
+```vim
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# If set, the pattern "**" used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
+#shopt -s globstar
+
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
+# set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
+
+# uncomment for a colored prompt, if the terminal has the capability; turned
+# off by default to not distract the user: the focus in a terminal window
+# should be on the output of commands, not on the prompt
+#force_color_prompt=yes
+
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+	# We have color support; assume it's compliant with Ecma-48
+	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+	# a case would tend to support setf rather than setaf.)
+	color_prompt=yes
+    else
+	color_prompt=
+    fi
+fi
+
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+```
 
 ## 利用.vimrc个性化配置vim
 
+* 复制一份vim配置模板到个人目录下
+```bash
+cp /usr/share/vim/vimrc ~/.vimrc
+```
+* 利用`vim`编辑该文件
 
+```vim
+"" 系统自带文件关键内容如下
+
+" Vim5 and later versions support syntax highlighting. Uncommenting the next
+" line enables syntax highlighting by default.
+if has("syntax")
+  syntax on
+endif
+
+" If using a dark background within the editing area and syntax highlighting
+" turn on this option as well
+set background=dark
+
+" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+" Uncomment the following to have Vim load indentation rules and plugins
+" according to the detected filetype.
+"if has("autocmd")
+"  filetype plugin indent on
+"endif
+
+" The following are commented out as they cause vim to behave a lot
+" differently from regular Vi. They are highly recommended though.
+"set showcmd		" Show (partial) command in status line.
+"set showmatch		" Show matching brackets.
+"set ignorecase		" Do case insensitive matching
+"set smartcase		" Do smart case matching
+"set incsearch		" Incremental search
+"set autowrite		" Automatically save before commands like :next and :make
+"set hidden		" Hide buffers when they are abandoned
+"set mouse=a		" Enable mouse usage (all modes)
+
+" Source a global configuration file if available
+if filereadable("/etc/vim/vimrc.local")
+  source /etc/vim/vimrc.local
+endif
+
+"" 实用设置
+
+set nocompatible                 "去掉有关vi一致性模式，避免以前版本的bug和局限    
+set nu!                                    "显示行号
+set guifont=Luxi/ Mono/ 9   " 设置字体，字体名称和字号
+filetype on                              "检测文件的类型     
+set history=1000                  "记录历史的行数
+set background=dark          "背景使用黑色
+syntax on                                "语法高亮度显示
+set autoindent                       "vim使用自动对齐，也就是把当前行的对齐格式应用到下一行(自动缩进）
+set cindent                             "（cindent是特别针对 C语言语法自动缩进）
+set smartindent                    "依据上面的对齐格式，智能的选择对齐方式，对于类似C语言编写上有用   
+set tabstop=4                        "设置tab键为4个空格，
+set shiftwidth =4                   "设置当行之间交错时使用4个空格     
+set ai!                                      " 设置自动缩进 
+set showmatch                     "设置匹配模式，类似当输入一个左括号时会匹配相应的右括号      
+set guioptions-=T                 "去除vim的GUI版本中得toolbar   
+set vb t_vb=                            "当vim进行编辑时，如果命令错误，会发出警报，该设置去掉警报       
+set ruler                                  "在编辑过程中，在右下角显示光标位置的状态行     
+set nohls                                "默认情况下，寻找匹配是高亮度显示，该设置关闭高亮显示     
+set incsearch                        "在程序中查询一单词，自动匹配单词的位置；如查询desk单词，当输到/d时，会自动找到第一个d开头的单词，当输入到/de时，会自动找到第一个以ds开头的单词，以此类推，进行查找；当找到要匹配的单词时，别忘记回车 
+set backspace=2           " 设置退格键可用
+```
+* 保存退出
+* [更多内容](https://blog.csdn.net/amoscykl/article/details/80616688)
+
+## Bash下使用rsync和crontab备份文件
+
+* Install `rsync` and `crontab`
+```bash
+# in Ubuntu
+sudo apt -y install rsync
+sudo apt -y install crontabs
+# in CentOS
+yum -y install rsync
+yum -y install crontabs
+```
+* Prepare the backup dir
+```bash
+mkdir /mac/backup
+```
+* Prepare a backup script, for example, `~/backup.sh`
+```bash
+#!/bin/bash
+#backup.sh
+#1. Local backup  
+RSYNC="rsync --stats  --compress --recursive --times --perms --links --delete --max-size=100M --exclude-from=/home/john/.rsync/exclude"
+echo "1. Backup of /home/john start at:"
+date
+$RSYNC /home/john/data/  /mac/backup/
+echo "Backup end at:"
+date
+#2. Remote backup 
+RSYNC="rsync --stats  --compress --recursive --times --perms --links --delete --max-size=100M"
+echo "2. Backup 172.22.220.20:/data/ to /mac/backup2/ start at:"
+date
+$RSYNC john@172.22.220.20:/home/john/data/ /mac/backup2/
+echo "Backup end at:"
+date
+exit 0
+```
+* Using `crontab` command to execute the backup script routinely, and record in a log file, for example, execute the command `~/backup.sh > ~/backup.log` in 5:10am everyday:
+  * add executable permission
+```bash
+chmod +x ~/backup.sh
+```
+  * open crontab and edit it by the following command: 
+```bash
+crontab -e	# or crontab ~/cronjob
+```
+  * type in the following lines or write the following in a file (i.e. `~/crontab`):
+```bash
+# minute hour day_in_month month day_in_week command
+     10   5  * * *   ~/backup.sh > ~/backup.log
+```
+  *exit and save
 
 ## Linux中for循环的几个常用写法
 
-1. 数字性循环
+* 数字型循环
 ```bash
 #!/bin/bash
 # 1
@@ -158,7 +468,7 @@ done
 awk 'BEGIN{for(i=1; i<=10; i++) print i}'
 exit 0
 ```
-2. 字符性循环
+* 字符型循环
 ```bash
 #!/bin/bash
 # 1
@@ -184,7 +494,7 @@ do
 done
 exit 0
 ```
-3. 路径查找
+* 路径查找型循环
 ```bash
 #!/bin/bash
 # 1
@@ -199,8 +509,13 @@ do
 done
 exit 0
 ```
+## Linux下将文件夹命名为今天的日期的方法
+```bash
+alias today="date +F%"	# +F% format is like 2020-01-01
+mkdir results-$(today)
+```
 
-## Linux下ls命令只显示目录的方法
+## Linux下使ls命令只显示目录的方法
 
 ```bash
 ls -F | grep '/$'	#最易用，若将其结果保存在变量里，可用循环遍历并用cd访问
@@ -245,10 +560,10 @@ dos2unix text.txt
 ```
 * 使用vi的替换功能，在vi的命令模式下输入:
 ```
-:%s/^M$//g		#去掉行尾的^M
-:%s/^M//g		#去掉所有的^M
+:%s/^M$//g			#去掉行尾的^M
+:%s/^M//g			#去掉所有的^M
 :%s/^M/[ctrl-v]+[enter]/g	#将^M替换成回车
-:%s/^M/\r/g		#将^M替换成回车
+:%s/^M/\r/g			#将^M替换成回车
 ```
 * 使用`sed`命令
 ```bash
@@ -320,11 +635,11 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted
 ```
 
 ## Ubuntu下使用`apt install XX`(`sudo apt install XX`)报错`Unable to locate package`
-* 解决方法一：正常情况下只需要更新软件列表
+* 正常情况下，只需要更新软件列表
 ```bash
 sudo apt update
 ```
-* 解决方法二：方法一无效时
+* 当上述命令无效时，尝试升级
 ```bash
 sudo apt upgrade
 ```
