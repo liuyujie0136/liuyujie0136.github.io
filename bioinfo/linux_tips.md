@@ -704,8 +704,8 @@ passwd
 su -
 ```
 * 编辑`sudo`权限文件
-```vim
-visudo	#切记，此处没有vi和sudo之间没有空格
+```bash
+visudo	#此处两词之间没有空格
 #在合适位置加入下面的语句
 <user_name>	ALL=(ALL) ALL
 ```
