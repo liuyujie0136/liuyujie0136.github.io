@@ -632,14 +632,14 @@ cut <option> <file>
 ```
 * 使用示例
 ```bash
-cut -c 3 text.txt	#输出第三位上的字符
-cut -c 3-5 text.txt	#输出第三至五位（均含）上的字符
-cut -c 3-4,6 text.txt	#输出第三至五位、第六位上的字符
-cut -c 3- text.txt	#输出第三个字符到最后一个字符
-cut -c -2,5- text.txt	#输出开始至第二个字符、第五个字符至最后一个字符
-cut -b 3-5 text.txt	#使用字节为单位来进行，若文件以单字节编码字符，则与c结果一致
-cut -f 2 text.txt	#输出第二列，默认列分隔符为Tab
-cut -f 2,3 text.txt	#输出第二列与第三列，默认列分隔符为Tab
+cut -c 3 text.txt		#输出第三位上的字符
+cut -c 3-5 text.txt		#输出第三至五位（均含）上的字符
+cut -c 3-4,6 text.txt		#输出第三至五位、第六位上的字符
+cut -c 3- text.txt		#输出第三个字符到最后一个字符
+cut -c -2,5- text.txt		#输出开始至第二个字符、第五个字符至最后一个字符
+cut -b 3-5 text.txt		#使用字节为单位来进行，若文件以单字节编码字符，则与c结果一致
+cut -f 2 text.txt		#输出第二列，默认列分隔符为Tab
+cut -f 2,3 text.txt		#输出第二列与第三列，默认列分隔符为Tab
 cut -d ' ' -f 2-5 text.txt	#输出第二至五列，列分隔符改为空格
 cut -d ';' -f 2- text.txt	#输出第二至最后，列分隔符改为分号
 ```
