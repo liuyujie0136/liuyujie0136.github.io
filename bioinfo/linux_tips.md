@@ -575,7 +575,6 @@ sed -e 's/^M/\n/g' text.txt	#注意：^M需使用[ctrl-v] [ctrl-m]生成，并�
 ## Linux下将多行文件合并为一行
 
 * 注意：对于win下文件（非linux创建），建议先运行`dos2unix`命令
-
 * 使用`awk`命令
 ```bash
 awk 'BEGIN{ORS=" "} {print}' text.txt
@@ -583,17 +582,14 @@ awk 'BEGIN{ORS=" "} {print}' text.txt
 awk 'BEGIN{RS=EOF} {gsub(/\n/," "); print}' text.txt
 # RS：输入行分隔符，默认\n，此处改为EOF文件结尾，故可一次读入整个文件，方便替换操作
 ```
-
 * 使用`sed`命令：`sed`默认按行处理，`N`可以让其读入下一行，再对\n进行替换，这样就可以将两行并做一行。但为了将所有行并作一行，需要采用其跳转功能。`:flag`在代码开始处设置一个标记`flag`，在代码执行到结尾处时利用跳转命令`t flag`重新跳转到标号`flag`处，重新执行代码，这样就可以递归将所有行合并成一行。
 ```bash
 sed ':flag; N; s/\n/ /g; t flag;' text.txt
 ```
-
 * 使用`xargs`命令
 ```bash
 cat text.txt | xargs
 ```
-
 * 附：文件合并、行筛选、多行合并脚本示例
 ```bash
 #!/bin/bash
@@ -613,6 +609,39 @@ do
 	cd ..
 done
 exit 0
+```
+
+## Linux中cut命令
+
+* cut是一个选取命令，其以行为单位，选择性输出符合条件的内容到标准输出，使用格式为：
+```bash
+cut <option> <file>
+```
+* 命令选项：
+```bash
+-b <输出范围>, --bytes=LIST：设置输出的字节数或范围
+-c <输出范围>, --characters=LIST：设置输出的字符数或范围
+-d <分隔符>, --delimiter=DELIM：指定列（或字段）的分隔字符。默认分隔符是制表符Tab。只能和-f选项一起使用
+-f <输出范围>, --fields=LIST：设置输出字段，默认字段分隔符是空格
+-n：与命令选项-b一起使用，不分割宽字符
+--complement：反向选择输出字节、字符或字段
+-s, --only-delimited：若行没有分隔符，则不显示该行。此选项只能和-f选项一起使用
+--output-delimiter=STRING：使用字符串作为输出分隔符，默认是输入分隔符
+--help：显示帮助信息
+--version：显示版本信息
+```
+* 使用示例
+```bash
+cut -c 3 text.txt	#输出第三位上的字符
+cut -c 3-5 text.txt	#输出第三至五位（均含）上的字符
+cut -c 3-4,6 text.txt	#输出第三至五位、第六位上的字符
+cut -c 3- text.txt	#输出第三个字符到最后一个字符
+cut -c -2,5- text.txt	#输出开始至第二个字符、第五个字符至最后一个字符
+cut -b 3-5 text.txt	#使用字节为单位来进行，若文件以单字节编码字符，则与c结果一致
+cut -f 2 text.txt	#输出第二列，默认列分隔符为Tab
+cut -f 2,3 text.txt	#输出第二列与第三列，默认列分隔符为Tab
+cut -d ' ' -f 2-5 text.txt	#输出第二至五列，列分隔符改为空格
+cut -d ';' -f 2- text.txt	#输出第二至最后，列分隔符改为分号
 ```
 
 ## Ubuntu镜像使用帮助
