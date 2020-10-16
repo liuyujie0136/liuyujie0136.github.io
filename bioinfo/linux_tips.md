@@ -703,13 +703,13 @@ passwd
 ```bash
 su -
 ```
-* 编辑`sudo`权限文件
+* 编辑`sudo`权限文件，注意，下述命令为一个单词
 ```bash
-visudo	#此处两词之间没有空格
+visudo
 ```
 * 出现vim编辑窗口，在文件合适位置加入该语句
 ```vim
-<user_name>	ALL=(ALL) ALL
+<user_name>        ALL=(ALL) ALL
 ```
 * 保存退出后，便把自己加入了sudo组，可以使用sudo命令了
 
