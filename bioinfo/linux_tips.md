@@ -81,6 +81,12 @@ docker exec -it -u root bioinfo_tsinghua bash
 
 ## [Linux特殊符号](https://mp.weixin.qq.com/s/IO8Ckahig14RIvyDPX5lhw)
 
+## [三十分钟学会AWK](https://github.com/mylxsw/growing-up/blob/master/doc/%E4%B8%89%E5%8D%81%E5%88%86%E9%92%9F%E5%AD%A6%E4%BC%9AAWK.md)
+
+## [三十分钟学会SED](https://github.com/mylxsw/growing-up/blob/master/doc/%E4%B8%89%E5%8D%81%E5%88%86%E9%92%9F%E5%AD%A6%E4%BC%9ASED.md)
+
+## [Learn Vim Progressively](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
+
 ## Linux查看系统基本信息
 
 * 查看版本当前操作系统内核信息
@@ -639,9 +645,9 @@ cut -c 3- text.txt		#输出第三个字符到最后一个字符
 cut -c -2,5- text.txt		#输出开始至第二个字符、第五个字符至最后一个字符
 cut -b 3-5 text.txt		#使用字节为单位来进行，若文件以单字节编码字符，则与c结果一致
 cut -f 2 text.txt		#输出第二列，默认列分隔符为Tab
-cut -f 2,3 text.txt		#输出第二列与第三列，默认列分隔符为Tab
+cut -f 2,3,5 text.txt		#输出第二、三、五列，默认列分隔符为Tab
 cut -d ' ' -f 2-5 text.txt	#输出第二至五列，列分隔符改为空格
-cut -d ';' -f 2- text.txt	#输出第二至最后，列分隔符改为分号
+cut -d ',' -f 2- text.txt	#输出第二至最后，列分隔符改为逗号（常见于csv文件）
 ```
 
 ## Ubuntu镜像使用帮助
