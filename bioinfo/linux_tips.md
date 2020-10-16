@@ -703,7 +703,7 @@ passwd
 ```bash
 su -
 ```
-* 编辑 sudoers file
+* 编辑sudoers file
 ```bash
 visudo	#切记，此处没有vi和sudo之间没有空格
 # 在合适位置加入下面的语句
