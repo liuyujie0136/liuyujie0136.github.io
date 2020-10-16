@@ -11,10 +11,7 @@
 * [常见物种拉丁名](notes/latin)
 
 ## Collection of My Writings
-### Literature Writings
 * [南雪](writings/南雪)
-
-### [Daily-updated Diary Collection](diary/diary_collection.md)
 
 ## Basic and Advanced Python Programming
 * [Python语言程序设计课程案例 @ 北理工MOOC](python/python_mooc_BIT)
@@ -22,11 +19,10 @@
 ## Basic C and C++ Programming
 * [程序设计基础课程案例 @ NJU](c/c_NJU)
 
-## Bioinformatics Files and Tutorials
+## Bioinformatics Tutorials and Notes 
 > Linux, R and Programming
 
 * [Bioinformatics in Action @ LuLab, Tsinghua University](https://lulab2.gitbook.io/teaching/)
 * [Linux使用技巧与注意事项](bioinfo/linux_tips)
 * [Bioinfo Websites](bioinfo/bioinfo_websites)
-* [EVOLUTIONARY BIOLOGY _ Bt Refuge Recommendation _ Basic & Rough Algorithm](bioinfo/EVOL_BtRefuge)
 

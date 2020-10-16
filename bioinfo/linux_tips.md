@@ -322,6 +322,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# personal alias
+alias c="clear"
+alias ca="cat -A"
 ```
 
 ## 利用.vimrc个性化配置vim
@@ -680,6 +684,32 @@ sudo apt update
 sudo apt upgrade
 ```
 * 注：一般情况下更改了软件源之后需要重新`update`
+
+## Linux管理员修改普通用户密码
+
+* root修改普通用户的密码
+```bash
+sudo passwd <user_name>
+```
+* [root查看普通用户密码](https://blog.csdn.net/lws123253/article/details/89228589)
+* 普通用户修改自己的密码
+```bash
+passwd
+```
+
+## Linux下使用sudo命令出现not in the sudoers file
+
+* 切换到root身份：注意有`-`，这和`su`是不同的，在用命令`su`的时候只是切换到root，但没有把root的环境变量传过去，还是当前用户的环境变量，用`su -`命令将环境变量也一起带过去，就像和root登录一样
+```bash
+su -
+```
+* 编辑 sudoers file
+```bash
+visudo	#切记，此处没有vi和sudo之间没有空格
+# 在合适位置加入下面的语句
+<user_name>	ALL=(ALL) ALL
+```
+* 保存退出后，便把自己加入了sudo组，可以使用sudo命令了
 
 ---
 
