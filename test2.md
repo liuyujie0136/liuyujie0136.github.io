@@ -14,3 +14,5 @@ _list_
 **ok**
 _test pull_
 pull _ok_
+
+test gitlens
