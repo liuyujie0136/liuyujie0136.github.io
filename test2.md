@@ -12,3 +12,4 @@ _list_
 
 # have a fun tool for git
 **ok**
+_test pull_
