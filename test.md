@@ -19,7 +19,7 @@
 - [ ] two
 - [ ] some
 - [x] list
-- [ ] cat
+- [x] cat
 - [ ] dog
 
 ## math
