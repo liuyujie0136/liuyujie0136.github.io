@@ -1,4 +1,5 @@
-
+- [test](#test)
+  - [math](#math)
 # test
 
 1. test1
@@ -21,7 +22,7 @@
 - [ ] cat
 - [ ] dog
 
-## next test
+## math
 
 $1+1=2$
 
