@@ -17,4 +17,4 @@ pull _ok_
 
 test gitlens
 
-change git email
+return to the basic no reply email
