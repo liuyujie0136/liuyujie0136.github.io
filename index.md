@@ -6,7 +6,7 @@
 
 ## Shared Notes
 * [Reading Notes](https://liuyujie0136.gitbook.io/reading-notes/)
-* [Science and Technology Notes](https://liuyujie0136.gitbook.io/sci-tech-notes/)<sup>under revision</sup>
+* [Science and Technology Notes](https://liuyujie0136.github.io/Sci-Tech-Notes/)
 * [NJU DII 生物方向保研经验分享（2020年）](notes/DII_Bio2020)
 * [阅读书籍分类汇总](notes/books)
 * [常见物种拉丁名](notes/latin)
