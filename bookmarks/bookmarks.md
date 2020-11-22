@@ -46,14 +46,14 @@
 
 ## Bioinfo Notes
 
-* [易生信 | 生物信息培训免费资料](http://www.ehbio.com/Training/index.php/Home/Index/Articles.html)
+* [易生信 - 生物信息培训免费资料](http://www.ehbio.com/Training/index.php/Home/Index/Articles.html)
 * [Nature综述: RNA-seq](https://mp.weixin.qq.com/s/pP489sT6UPS7CY-lYLs0LA)
-* [COX比例风险回归模型笔记 | RVDSD的笔记](http://rvdsd.top/2017/06/22/BioStatistics/生物统计-12COX比例风险回归模型/)
-* [全外显子组测序 | oddxix - 简书](https://www.jianshu.com/p/d4a08101a4ed)
-* [Forest plot（森林图） | Cox生存分析可视化 - 生信补给站 - 博客园](https://www.cnblogs.com/Mao1518202/p/11638427.html)
+* [COX比例风险回归模型笔记 - RVDSD的笔记](http://rvdsd.top/2017/06/22/BioStatistics/生物统计-12COX比例风险回归模型/)
+* [全外显子组测序 - oddxix - 简书](https://www.jianshu.com/p/d4a08101a4ed)
+* [Forest plot（森林图） - Cox生存分析可视化 - 生信补给站 - 博客园](https://www.cnblogs.com/Mao1518202/p/11638427.html)
 * [图说meta十：森林图简介](https://zhuanlan.zhihu.com/p/27817969)
 * [Cox回归生存分析 - 简书](https://www.jianshu.com/p/e80eb4168043)
-* [生存分析 | Public Library of Bioinformatics](https://www.plob.org/article/23221.html)
+* [生存分析 - Public Library of Bioinformatics](https://www.plob.org/article/23221.html)
 * [外显子组及全外显子组测序WES - 简书](https://www.jianshu.com/p/6364cfe0bf1f)
 * [生信基础知识100讲](https://mp.weixin.qq.com/s?__biz=MzAxMDkxODM1Ng==&mid=2247485662&idx=1&sn=e1b55e5bea539daed3e003b4f0d7e971&scene=21#wechat_redirect)
 
@@ -113,7 +113,7 @@
 
 * [R语言统计与绘图](https://zhuanlan.zhihu.com/c_1213401954463973376)
 * [Quick-R](https://www.statmethods.net/)
-* [A pipeline for RNASeq data analysis in R - 莫の博客 | Mo Blog](https://yj-mo.github.io/2020/10/26/Team/)
+* [A pipeline for RNASeq data analysis in R - 莫の博客 - Mo Blog](https://yj-mo.github.io/2020/10/26/Team/)
 * [ggtree录播](https://mp.weixin.qq.com/s?__biz=MzI5NjUyNzkxMg==&mid=2247486677&idx=1&sn=c9af4ab4642db5e7f3eff04f392be17d&scene=21#wechat_redirect)
 * [生信分析人员如何系统入门R(2019更新版)](https://mp.weixin.qq.com/s/xOT4QGQsBMwu6R38AE9Y6A)
 * [WGCNA分析，简单全面的最新教程](https://mp.weixin.qq.com/s/3Z7RNq8gOzmPie1HX6vpyg)
@@ -155,7 +155,7 @@
 ## Temp
 
 * [linux安装或卸载miniconda - 简书](https://www.jianshu.com/p/fab0068a32b4)
-* [anaconda | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror](https://mirror.tuna.tsinghua.edu.cn/help/anaconda/)
+* [anaconda - 镜像站使用帮助 - 清华大学开源软件镜像站 - Tsinghua Open Source Mirror](https://mirror.tuna.tsinghua.edu.cn/help/anaconda/)
 * [安装完anaconda后，终端前面多了个base](https://blog.csdn.net/qq_39314099/article/details/105651801)
 * [Manual for: mhchem for MathJax, mhchem for KaTeX](https://mhchem.github.io/MathJax-mhchem/)
 
@@ -166,7 +166,7 @@
 * [日文图片扫描识别_日文OCR_小楠日语](http://o-oo.net.cn/japaneseocr/)
 * [PaperPass论文查重](https://www.paperpass.com/)
 * [高质量图片，科大&微软挑图神器](https://www.linkresearcher.com/theses/69a61815-d912-4ba9-8a16-34683a2559af?from=singlemessage)
-* [NOUNPLUS | Grammar Check Online](https://www.nounplus.net/grammarcheck/)
+* [NOUNPLUS - Grammar Check Online](https://www.nounplus.net/grammarcheck/)
 * [OriginPro Learning Edition](https://www.originlab.com/OriginProLearning.aspx)
 * [Online OCR](http://ocr.space/)
 * [OfficePLUS](http://www.officeplus.cn/Template/Home.shtml)
