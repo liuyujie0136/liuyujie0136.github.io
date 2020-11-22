@@ -1,6 +1,6 @@
 # Homepage
 
-### [Bookmarks](bookmarks/Microsoft_Edge_‎11_‎21_‎2020.html)
+### [Bookmarks](bookmarks/bookmarks)
 
 ### [Reading Notes](https://liuyujie0136.github.io/Reading-Notes/)
 
