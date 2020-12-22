@@ -16,8 +16,7 @@
 枯草杆菌 | Bacillus subtilis
 盘基网柄菌 | Dictyostelium discoideum
 拟南芥 | Arabidopsis thaliana
-水稻 | Oryza sativa
-粳稻 | Oryza sativa subsp keng
+粳稻 | Oryza sativa japonica
 籼稻 | Oryza sativa indica
 玉米 | Zea mays
 棉花 | Gossypium spp
@@ -39,4 +38,3 @@
 仓鼠 | Mesocricetus auratus
 海鞘 | Ciona intestinalis
 家蚕 | Bombyx mori
-
