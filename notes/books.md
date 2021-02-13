@@ -7,7 +7,7 @@
 书名 | 作者 | 状态 | 备注
 :---:|:---:|:---:|:---:
 荷马史诗 | 荷马
-诸子百家丛书 | 诸子百家
+诸子百家丛书 | 诸子百家 | | [目录](books_contents)
 伊索寓言 | 伊索 | 已读
 诗经选(2册) | 人民 | 已读
 三国演义 | 罗贯中 | 已读
@@ -153,7 +153,7 @@ For One More Day | Mitch Albom | HAVE READ
 The Five People You Meet in Heaven | Mitch Albom
 Have a Little Faith | Mitch Albom
 50 Great Short Stories | Milton Crane
-Lobster is the Best Medicine | liz climo | HAVE READ
+Lobster is the Best Medicine | Liz Climo | HAVE READ
 Clean (Poems) | Kate Northrop
 Dear Editor (Poems) | Amy Newman | HAVE READ
 
