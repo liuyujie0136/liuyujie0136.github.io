@@ -14,3 +14,5 @@
 
 ### [NJU C语言程序设计基础 课程案例](notes/c_NJU)
 
+### [Explain SAM Flags](tools/SAM_flag.html)
+
