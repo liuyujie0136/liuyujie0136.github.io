@@ -16,3 +16,4 @@
 
 ### [Explain SAM Flags](tools/SAM_flag.html)
 
+### [IGV Test](tools/igv_test.html)
