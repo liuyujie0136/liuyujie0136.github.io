@@ -146,18 +146,18 @@
 
 ## 外文原版书籍类
 
-TITLE | AUTHOR(S) | STATUS
+书名 | 作者 | 状态
 :---:|:---:|:---:
-Charlotte's Web | E.B.White | HAVE READ
-Bridge to Terabithia | Katherine Paterson | HAVE READ
-Tuesday with Morrie | Mitch Albom | HAVE READ
-For One More Day | Mitch Albom | HAVE READ
-The Five People You Meet in Heaven | Mitch Albom
-Have a Little Faith | Mitch Albom
+Charlotte's Web | E.B.White | 已读
+Bridge to Terabithia | Katherine Paterson | 已读
+Tuesday with Morrie | Mitch Albom | 已读 赠出
+For One More Day | Mitch Albom | 已读 赠出
+The Five People You Meet in Heaven | Mitch Albom | 赠出
+Have a Little Faith | Mitch Albom | 赠出
 50 Great Short Stories | Milton Crane
-Lobster is the Best Medicine | Liz Climo | HAVE READ
+Lobster is the Best Medicine | Liz Climo | 已读
 Clean (Poems) | Kate Northrop
-Dear Editor (Poems) | Amy Newman | HAVE READ
+Dear Editor (Poems) | Amy Newman | 已读
 
 ## 旧书类
 
