@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGViewer_Arabidopsis</title>
+    <script src="https://cdn.jsdelivr.net/npm/igv@2.12.0/dist/igv.min.js"></script>
+</head>
+
+<body>
+    <div id="igv-div"></div>
+</body>
+<script>
+    var igvDiv = document.getElementById("igv-div");
+    var options = {
+        genome: "tair10",
+        locus: "Chr1:2520000-2530000",
+        showNavigation: true,
+        showRuler: true,
+        tracks: [
+            {
+                name: "Col-0_root_RNAseq",
+                format: "bigwig",
+                url: "https://liuyujie0136.github.io/BioGenome-Track-Files/ath/Col-0_root_RNAseq.bw"
+            },
+            {
+                name: "Col-0_root_18-30nt_sRNA",
+                format: "bigwig",
+                url: "https://liuyujie0136.github.io/BioGenome-Track-Files/ath/Col-0_root_18-30nt_sRNA.bw"
+            },
+            {
+                name: "Col-0_root_24nt_sRNA",
+                format: "bigwig",
+                url: "https://liuyujie0136.github.io/BioGenome-Track-Files/ath/Col-0_root_24nt_sRNA.bw"
+            },
+            {
+                name: "Col-0_root_H3K4me3",
+                format: "bigwig",
+                url: "https://liuyujie0136.github.io/BioGenome-Track-Files/ath/Col-0_root_H3K4me3.bw"
+            },
+            {
+                name: "Col-0_root_H3K27me3",
+                format: "bigwig",
+                url: "https://liuyujie0136.github.io/BioGenome-Track-Files/ath/Col-0_root_H3K27me3.bw"
+            },
+        ]
+    };
+    igv.createBrowser(igvDiv, options)
+        .then(function (browser) {
+            console.log("Created IGV browser");
+        }
+        )
+</script>
+
+</html>

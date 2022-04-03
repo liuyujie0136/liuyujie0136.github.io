@@ -16,4 +16,4 @@
 
 ### [Explain SAM Flags](tools/SAM_flag.html)
 
-### [IGV Test](tools/igv_test.html)
+### [IGV for Arabidopsis](tools/IGViewer_ath.html)
